@@ -46,10 +46,11 @@ It happens when DNS is blocked at the receiving part of the security group to wh
 It happens when DNS is blocked at the receiving part of the security group to which instance belongs. Adjust the security group to be allowed to receivie DNS. 
 <br>
 
-<h3>CentOS 6.x 인스턴스에서 패키지 업데이트에 실패합니다.</h3>
+<h3>CentOS 6.x instance fails package update.</h3>
 
-다음과 같이 `yum repository` 파일을 수정하여 사용합니다.
-공식 지원이 종료된 OS는 추가 업데이트가 지원되지 않으므로, 상위 버전의 OS 사용을 권장합니다.
+Modify the `yum repository` file as shown below to use it:
+Since no further update is supported for an OS of which official support is over, the use of the later version of the OS is recommended.
+
 ```
 $ sudo vi /etc/yum.repos.d/CentOS-Base.repo
 ...
